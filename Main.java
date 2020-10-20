@@ -1,4 +1,7 @@
 import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+
 class Main {
   public enum Weather{Sun, Cloudy, Rainy, Snow};
   public enum Genre{Rap, RnB, Pop, Indie, Classical, Rock, EDM};
@@ -110,6 +113,305 @@ class Main {
         }
       }
       return songs;
+  }
+
+  public static ArrayList<String> getArtist(Weather x){
+    ArrayList<String> artist = new ArrayList<>();
+      try(Scanner scanner = new Scanner(new File("/Data/data_w_genres.csv"))) {
+      /*  
+       scanner.useDelimiter(",");
+
+       while(sc.hasNextLine()){
+           artist.add(getRecordFromLine(sc.nextLine()));
+       }
+      */
+    while (scanner.hasNext()) {
+			String data = scanner.next();
+			  
+				//name
+		   if (index == 1){
+         // acousticness
+			
+      }else if (index == 2) {//Dancability
+				switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+			 }else if (index == 3){ //Duration
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if (index== 4){// Energy
+            switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 5){ //Instrumentalnnes
+            switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 6){ // Liveliness
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }  
+        }else if(index == 7){// Loudness
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 8){// Peachiness
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 9){// Tempo
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 10){// Balance
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 11){// Popularity
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 12){// Key
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 13){ // Mode
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 14){ // Count
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }
+        }else if(index == 15) { // Genre
+          switch (x){
+          case Sun:
+            /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Cloudy:
+              /* if( parse(data) < .4){ // < idk how to parse data
+                  
+           }*/
+          case Rainy:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+          case Snow:
+             /* if( parse(data) > .6){ // < idk how to parse data
+                  
+           }*/
+        }       
+        }
+
+				else{
+					System.out.println("invalid data::" + data);
+        }
+				index++;
+			}
+
+        scanner.close();
+  
+       return artist;
+      }catch(Exception E){
+        
+      }
   }
   // Weather will be connected to numbers 
   // 0 = Sunny, 1 = Cloudy, 2 = Rain, 3 = Snow
